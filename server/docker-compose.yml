@@ -7,4 +7,4 @@ services:
     environment:
       - POSTGRES_USER=docker
       - POSTGRES_PASSWORD=docker
-      - POSTEGRES_DB=inorbit
+      - POSTGRES_DB=inorbit
