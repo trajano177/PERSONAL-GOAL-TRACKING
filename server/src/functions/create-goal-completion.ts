@@ -17,7 +17,7 @@ export async function createGoalCompletion( {goalId}: CreateGoalCompletionReques
       .as('completionCount')
     }).from(goalCompletions).where(and(
       gte(goalCompletions.createdAt, firestDayOfWeek),
-      lte(goalCompletions.createdAt, firestDayOfWeek),
+      lte(goalCompletions.createdAt, lastDayOfWeek),
       eq(goalCompletions.id, goalId)
     )).groupBy(goalCompletions.goalId)
   )
