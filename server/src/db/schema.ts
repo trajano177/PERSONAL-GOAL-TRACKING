@@ -11,6 +11,6 @@ export const goals = pgTable('goals', {
 
 export const goalCompletions = pgTable('goal_completions', {
   id: text('id').primaryKey().$defaultFn(() => createId()),
-  goalId: text('id').references(() => goals.id).notNull(),
+  goalId: text('goal_id').references(() => goals.id).notNull(),
   createdAt: timestamp('created_at', {withTimezone: true}).notNull().defaultNow()
 })
