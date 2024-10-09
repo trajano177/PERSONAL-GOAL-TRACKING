@@ -1,9 +1,8 @@
 import { Plus, X } from 'lucide-react'
 import logo from '../../assets/logo-in-orbit.svg'
 import letsStart from '../../assets/lets-start-illustration.svg'
-import { DialogTrigger } from './dialog'
-import { Button } from './button'
-
+import { Button } from './ui/button'
+import { DialogTrigger } from './ui/dialog'
 
 export function EmptyGoals() {
   return (
